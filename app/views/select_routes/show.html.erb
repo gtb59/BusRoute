@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<!-- <p>
+  <strong>Select route:</strong>
+  <%= @select_route.select_route_id %>
+</p> -->
+
+<p>
+  <strong>Start time:</strong>
+  <%= @select_route.start_time %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @select_route.destination %>
+</p>
+
+<p>
+  <strong>Travel date:</strong>
+  <%= @select_route.travel_date %>
+</p>
+
+<p>
+  <strong>Arrival time:</strong>
+  <%= @select_route.arrival_time %>
+</p>
+
+<%= link_to 'Edit', edit_select_route_path(@select_route) %> |
+<%= link_to 'Back', select_routes_path %>

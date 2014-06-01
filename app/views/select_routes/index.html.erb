@@ -1,0 +1,35 @@
+<h1>Listing select_routes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Select route</th>
+      <th>Start time</th>
+      <th>Destination</th>
+      <th>Travel date</th>
+      <th>Arrival time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @select_routes.each do |select_route| %>
+      <tr>
+        <!-- <td><%= select_route.select_route_id %></td> -->
+        <td><%= select_route.start_time %></td>
+        <td><%= select_route.destination %></td>
+        <td><%= select_route.travel_date %></td>
+        <td><%= select_route.arrival_time %></td>
+        <td><%= link_to 'Show', select_route %></td>
+        <!-- <td><%= link_to 'Edit', edit_select_route_path(select_route) %></td> -->
+        <!-- <td><%= link_to 'Destroy', select_route, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Select route', new_select_route_path %>

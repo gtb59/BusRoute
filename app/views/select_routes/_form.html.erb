@@ -1,0 +1,37 @@
+<%= form_for(@select_route) do |f| %>
+  <% if @select_route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@select_route.errors.count, "error") %> prohibited this select_route from being saved:</h2>
+
+      <ul>
+      <% @select_route.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :select_route_id %><br>
+    <%= f.text_field :select_route_id %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br>
+    <%= f.text_field :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :destination %><br>
+    <%= f.text_field :destination %>
+  </div>
+  <div class="field">
+    <%= f.label :travel_date %><br>
+    <%= f.text_field :travel_date %>
+  </div>
+  <div class="field">
+    <%= f.label :arrival_time %><br>
+    <%= f.time_select :arrival_time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

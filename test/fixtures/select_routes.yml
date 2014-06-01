@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  select_route_id: 
+  start_time: 
+  destination: 
+  travel_date: 
+  arrival_time: 2014-06-01 07:01:44
+
+two:
+  select_route_id: 
+  start_time: 
+  destination: 
+  travel_date: 
+  arrival_time: 2014-06-01 07:01:44
